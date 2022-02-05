@@ -1,0 +1,1 @@
+game_load("town_quick_save")

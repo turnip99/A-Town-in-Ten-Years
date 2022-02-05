@@ -1,0 +1,1 @@
+sprite_index = global.args[0]

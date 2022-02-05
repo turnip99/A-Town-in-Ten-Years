@@ -1,0 +1,12 @@
+w = 600
+var h = 60
+x1 = x-w/2
+y1 = y-h/2
+x2 = x+w/2
+y2 = y+h/2
+input_field = global.args[0]
+text = ""
+cursor_char = "|"
+cursor_delay = 20
+alarm[0] = cursor_delay
+keyboard_string = ""
