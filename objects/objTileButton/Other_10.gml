@@ -1,5 +1,5 @@
 var selected_tile = get_selected_tile()
-if get_stat("Gold") >= cost && !selected_tile.building
+if get_stat("Gold") >= cost && !selected_tile.building && global.season_buildings < global.season_max_buildings
 {
 	with selected_tile
 	{
@@ -12,6 +12,7 @@ if get_stat("Gold") >= cost && !selected_tile.building
 		audio_play_sound(sndBuildBegin, 0, false)
 	}
 	increment("Gold", -cost)
+	global.season_buildings += 1
 }
 else
 {

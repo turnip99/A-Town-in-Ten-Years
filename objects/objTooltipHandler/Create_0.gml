@@ -7,10 +7,10 @@ hover_steps = 0
 switch (topic)
 {
 	case "Seasons":
-		tooltip_text = "The game is divided into 10 years, each with 4 seasons - that's 40 seasons in total. At the end of each season, all of your tiles with seasonal yields will be evaluated, and your town population may change as residents arrive or depart. You may also be faced with a random encounter to resolve."
+		tooltip_text = "The game is divided into 10 years, each with 4 seasons - that's 40 seasons in total. You can only build/upgrade a certain amount of buildings per season (this increases through the years). At the end of each season, all of your tiles with seasonal yields will be evaluated, and your town population may change as residents arrive or depart. You may also be faced with a random encounter to resolve."
 		break;
 	case "End Season":
-		tooltip_text = "Click this button to end a season prematurely."
+		tooltip_text = "Click this button to end the current season."
 		break;
 	case "Prestige":
 		tooltip_text = "The reputation of your town. This will determine your town's final ranking, as well as influencing its seasonal population growth."

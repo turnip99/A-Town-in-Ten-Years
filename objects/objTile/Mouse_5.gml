@@ -1,7 +1,7 @@
 if tier == 0 || tier == 4
 	exit;
 var upgrade_cost = get_tile_cost(tile_type, tile_type, tier)
-if get_stat("Gold") >= upgrade_cost && !building
+if get_stat("Gold") >= upgrade_cost && !building && global.season_buildings < global.season_max_buildings
 {
 	building = true
 	building_tile_type = tile_type
@@ -11,6 +11,7 @@ if get_stat("Gold") >= upgrade_cost && !building
 	alarm[0] = total_build_steps
 	audio_play_sound(sndBuildBegin, 0, false)
 	increment("Gold", -upgrade_cost)
+	global.season_buildings += 1
 }
 else
 {

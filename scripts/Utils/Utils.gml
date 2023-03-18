@@ -44,14 +44,14 @@ function instance_create_depth_args()
 }
 
 
-/*
+
 function print()
 {
 	window_set_fullscreen(false);
 	show_message(argument[0]);
 	window_set_fullscreen(true);
 }
-*/
+
 
 
 function plus_sign_num(val)

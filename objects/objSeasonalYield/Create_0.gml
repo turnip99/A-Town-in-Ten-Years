@@ -76,6 +76,7 @@ if courtier.toggled && get_stat("Gold")-gold_mod-get_envoy_assassin_cost(global.
 var pop_space = get_stat("Max Population") - get_stat("Population")
 if population_mod > pop_space
 	population_mod = pop_space
+	
 
 prestige_mod = increment("Prestige", prestige_mod)
 defence_mod = increment("Defence", defence_mod)

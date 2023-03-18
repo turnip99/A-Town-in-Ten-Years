@@ -185,3 +185,7 @@ function scale_stat(stat, val)
 			return round(val + 0.04*val*global.season)
 	}
 }
+
+function get_season_max_buildings() {
+	return round(power(global.season, 1.4) + 4)
+}

@@ -5,16 +5,19 @@ draw_set_colour(c_white)
 if global.season <= 40
 {
 	draw_text(10, 20, "Year: " + string(ceil(global.season/4)))
-	draw_text(10, 50, "Season: " + string(((global.season-1)%4)+1))
+	draw_text(76, 20, "Season: " + string(((global.season-1)%4)+1))
 	draw_roundrect(10, 75, 110, 85, true)
 	draw_set_colour(c_navy)
 	draw_roundrect(10, 75, 110, 85, false)
 	draw_set_colour(c_yellow)
-	draw_roundrect(10, 75, 10+global.timer, 85, false)
+	draw_set_halign(fa_center)
+	draw_text(60, 58, string(global.season_buildings) + "/" + string(global.season_max_buildings))
+	draw_roundrect(10, 75, 10+(global.season_buildings/global.season_max_buildings)*100, 85, false)
 	draw_sprite_stretched(sprEndSeason, 0, end_season_button_x, end_season_button_y, 40, 40)
 }
 
 draw_set_colour(c_white)
+draw_set_halign(fa_left)
 draw_icon(stats_x1, 0, sprPrestige)
 draw_text(stats_x1+55, 25, thousands_separator(get_stat("Prestige")))
 draw_icon(stats_x1, 50, sprDefence)

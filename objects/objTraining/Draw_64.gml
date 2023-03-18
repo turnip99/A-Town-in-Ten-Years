@@ -7,7 +7,7 @@ switch (state)
 		{
 			text = "My " + global.player_title + ", I have a request, if you would hear it?"
 			yText=draw_encounter_text(text, fnEncounterItalics, yText)
-			text = "You see, a some old colleagues from my time workng at the Royal Library have expressed an interest in joining me in " + global.town_name + ". They are diligent workers and would be a boon to me in my work."
+			text = "You see, some old colleagues from my time workng at the Royal Library have expressed an interest in joining me in " + global.town_name + ". They are diligent workers and would be a boon to me in my work."
 			yText=draw_encounter_text(text, fnEncounterItalics, yText)
 			text = "It is a long journey from the Royal City, though, and I was wondering if you'd be willing to part with some of our treasury's gold to grant them passage?"
 			yText=draw_encounter_text(text, fnEncounterItalics, yText)

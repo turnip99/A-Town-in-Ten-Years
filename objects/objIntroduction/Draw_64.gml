@@ -19,6 +19,8 @@ switch (state)
 	case "text_3":
 		text = "For a cost of gold, you will be able to order the construction of homes, farms, markets, chapels and various other facilities. Most of these places will provide both a passive increase or decrease to our town's health, but also produce a seasonal yield. For example, a farm increases our maximum population slightly, and will produce goods on a seasonal basis."
 		yText=draw_encounter_text(text, fnEncounterItalics, yText)
+		text = "During each season, you can construct up to a certain number of buildings. As the years progress, this number will increase. You can choose to end a season at any time by clicking the 'moon pendant' icon in the dashboard above."
+		yText=draw_encounter_text(text, fnEncounterText, yText)
 		break;
 	case "text_4":
 		text = "The locations in which you choose to build will be critical, as well, as each type of construction will be more fruitful when near to other specific facilities."
@@ -47,5 +49,7 @@ switch (state)
 	case "text_8":
 		text = "I wish you well on your great venture, my " + global.player_title + ". I believe it is perhaps time to begin?"
 		yText=draw_encounter_text(text, fnEncounterItalics, yText)
+		text = "You can press the space bar to pause the game, F5 to save the game and F6 to load your most recent save file."
+		yText=draw_encounter_text(text, fnEncounterText, yText)
 		break;
 }

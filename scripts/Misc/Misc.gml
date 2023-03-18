@@ -3,7 +3,8 @@ function end_season()
 	audio_play_sound(sndSeasonEnd, 0, false)
 	instance_create_depth(0, 0, -1000, objSeasonalYield)
 	global.season+=1
-	global.timer=0
+	global.season_buildings=0
+	global.season_max_buildings=get_season_max_buildings()
 }
 
 
